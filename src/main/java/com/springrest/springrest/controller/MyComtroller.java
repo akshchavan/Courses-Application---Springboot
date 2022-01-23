@@ -43,10 +43,7 @@ public class MyComtroller {
 		return customerDao.findAll();
 	}
 	
-	@GetMapping("/getInfo")
-	public List<OrderResponse> findinfo(){
-		return customerDao.getJoinInfo();
-	}
+	
 	
 //	@Autowired
 //	private CourseService courseService;
