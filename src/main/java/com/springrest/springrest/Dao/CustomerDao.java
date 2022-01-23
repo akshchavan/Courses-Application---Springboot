@@ -10,8 +10,6 @@ import com.springrest.springrest.entities.Customer;
 
 public interface CustomerDao extends JpaRepository<Customer, Long>{
 	
-	@Query("SELECT new com.springrest.springrest.dto.OrderResponse(c.name, c.title) from Customer c JOIN c.Course c")
-	public List<OrderResponse> getJoinInfo();
-	 
+	
 
 }
